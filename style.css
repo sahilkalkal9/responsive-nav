@@ -1,0 +1,106 @@
+.container{
+    width: 99vw;
+    height: 97vh;
+    display: grid;
+    grid-template-rows: 1.5cm auto;
+  
+    
+}
+.upper{
+    border-bottom: 1px solid;
+    position: sticky;
+    background-color: whitesmoke;
+
+    
+}
+.lower{
+    overflow: scroll;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 40px;
+    padding-left: 5vw;
+}
+.menuItem{
+    font-size: 20px;
+}
+.menu{
+    display: flex;
+    column-gap: .5cm;
+    align-items: center;
+    padding-right: 5vw;
+}
+
+#menuImg{
+    height: 0.6cm;
+    display: none;
+}
+
+.overlay {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: blanchedalmond;
+  /*  background-color: rgba(0,0,0, 0.9);*/
+    overflow-y: hidden;
+    transition: 0.5s;
+    /* color: black; */
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  p{
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+ 
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #28282b;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+@media screen and (max-width: 900px){
+  
+    .overlay a{
+      font-size: 30px;
+    }
+}
+
+@media screen and (max-width:500px){
+    #m{
+        display: none;
+    }
+    #menuImg{
+        display: block;
+    }
+    .overlay a{
+        font-size: 20px;
+      }
+}
